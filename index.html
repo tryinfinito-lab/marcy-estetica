@@ -201,6 +201,8 @@ footer img{width:150px;height:auto}
 @media (min-width:900px){
   section{padding:120px 0}
   .frases{margin-inline:0;padding-inline:0}
+  .hero-foto{object-position:50% 55%}
+  .hero::after{background:linear-gradient(90deg,rgba(58,30,41,.94) 0%,rgba(58,30,41,.8) 32%,rgba(58,30,41,.2) 62%,rgba(58,30,41,0) 80%),linear-gradient(180deg,rgba(58,30,41,.65) 0%,rgba(58,30,41,0) 22%,rgba(58,30,41,0) 75%,rgba(58,30,41,.45) 100%)}
   .hero-corpo{padding-bottom:72px}
   .hero-topo img{width:150px}
   .grupos{grid-template-columns:1fr 1fr}
@@ -234,7 +236,10 @@ footer img{width:150px;height:auto}
 </svg>
 
 <header class="hero" id="inicio">
-  <img class="hero-foto" src="img/entrada-alta.webp" alt="Entrada do prédio da Marcy Estética, com portas douradas em arco, na Rua Dr. Tirso Martins" fetchpriority="high">
+  <picture>
+    <source media="(min-width:900px)" srcset="img/topo-pc.webp" width="2400" height="1350">
+    <img class="hero-foto" src="img/topo-celular.webp" width="1200" height="2133" alt="Sala de atendimento clara, com parede vinho, maca branca e toalhas rosa" fetchpriority="high">
+  </picture>
   <div class="hero-topo wrap"><img src="img/logo-branco.webp" width="720" height="466" alt="Marcy Estética de resultados"></div>
   <div class="hero-corpo wrap">
     <span class="olho" data-entra="1">Marcy Estética</span>
@@ -384,7 +389,7 @@ footer img{width:150px;height:auto}
       </div>
     </div>
     <div class="fotos">
-      <figure class="moldura rv"><img src="img/saguao.webp" alt="Saguão do prédio, com piso de mármore e jardim" loading="lazy"></figure>
+      <figure class="moldura rv"><img src="img/entrada-alta.webp" alt="Entrada do prédio, número 100 da Rua Dr. Tirso Martins" loading="lazy"></figure>
       <figure class="moldura rv"><img src="img/recepcao.webp" alt="Recepção com cadeiras rosa" loading="lazy"></figure>
       <figure class="moldura rv"><img src="img/corredor.webp" alt="Corredor das salas de atendimento" loading="lazy"></figure>
     </div>
